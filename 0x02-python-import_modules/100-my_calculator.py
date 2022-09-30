@@ -14,30 +14,10 @@ if __name__ == "__main__":
     a = int(args[1])
     b = int(args[3])
     op = args[2]
-
-    def f_add():
-        res = add(a, b)
-        print("{:d} + {:d} = {:d}".format(a, b, res))
-        return res
-
-    def f_sub():
-        res = sub(a, b)
-        print("{:d} - {:d} = {:d}".format(a, b, res))
-        return res
-
-    def f_mul():
-        res = mul(a, b)
-        print("{:d} * {:d} = {:d}".format(a, b, res))
-        return res
-
-    def f_div():
-        res = div(a, b)
-        print("{:d} / {:d} = {:d}".format(a, b, res))
-        return res
     ops = {
-        "+": f_add,
-        "-": f_sub,
-        "*": f_mul,
-        "/": f_div
+        "+": add,
+        "-": sub,
+        "*": mul,
+        "/": div
     }
-    ops.get(op)()
+    print("{} {} {} = {}". format(a, op, b, ops.get(op)(a, b)))
