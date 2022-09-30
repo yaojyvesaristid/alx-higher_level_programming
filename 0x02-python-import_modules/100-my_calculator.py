@@ -6,7 +6,7 @@ if __name__ == "__main__":
     length = len(args)
     signs = ['+', '-', '*', '/']
     if length != 4:
-        print("Usage: ./100-f_calculator.py <a> <operator> <b>")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     if args[2] not in signs:
         print("Unknown operator. Available operators: +, -, * and /")
@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
     def f_div():
         res = div(a, b)
-        print("{:d} / {:d} = {:f}".format(a, b, res))
+        print("{:d} / {:d} = {:d}".format(a, b, res))
         return res
     ops = {
         "+": f_add,
