@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-def no_c(my_my_stringing):
-    my_my_stringing = list(my_my_stringing)
+def no_c(my_string):
+    my_string = list(my_string)
     my_stringi = []
     for i in range(len(my_string)-1):
         if my_string[i] == 'c' or my_string[i] == 'C':
