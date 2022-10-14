@@ -8,5 +8,5 @@ def uniq_add(my_list=[]):
                 sum = 0
         while len(nlist) > 0:
             sum = sum + nlist.pop()
-            return sum
+        return sum
     return 0
