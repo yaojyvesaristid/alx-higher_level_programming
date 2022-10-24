@@ -17,4 +17,4 @@ def list_division(my_list_1, my_list_2, list_res_vector):
         finally:
             cpt += 1
             res_vector.append(res)
-            return res_vector
+    return res_vector
