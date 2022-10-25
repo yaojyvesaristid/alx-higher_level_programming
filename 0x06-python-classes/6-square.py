@@ -57,7 +57,7 @@ class Square:
                 print()
             print(nb_space, end="")
             for i in range(1, self.__size**2+1):
-                if i % 3 == 0:
+                if i % self.__size == 0:
                     print("#")
                     if i != self.__size**2:
                         print(nb_space, end="")
