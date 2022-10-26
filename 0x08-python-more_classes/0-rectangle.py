@@ -5,6 +5,8 @@
     Module Rectangle
 """
 class Rectangle:
-    """
+  
+
+  """
     Empty class Rectangle
     """
