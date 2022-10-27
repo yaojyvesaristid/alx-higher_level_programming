@@ -61,4 +61,4 @@ class Rectangle:
                 figure += '\n'
             for j in range(self.__width):
                 figure += "#"
-        return figure 
+        return figure
