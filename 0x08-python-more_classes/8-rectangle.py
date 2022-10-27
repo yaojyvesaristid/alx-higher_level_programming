@@ -2,12 +2,8 @@
 """
 This is the "Rectangle"  module.
 
-This module provides a simple Rectangle class with attribute width and height.
+This module provides a Rectangle class with attribute width and height.
 Default values of both attributes are 0.
-public class attribute number_of_instances initialized to 0
-public class attribute print_symbol initialized to #
-instance method area perimeter str repr and del
-static method bigger_or_equal with 2 parameters rect_1 and rect_2
 """
 
 
