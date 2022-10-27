@@ -14,7 +14,7 @@ class Rectangle:
     constructor and getters and setters for the 2 attributes
     method area to compute the rectangle area
     method perimeter to compute the rectangle perimeter
-    method print and str print the rectangle 
+    method print and str print the rectangle
     """
     def __init__(self, width=0, height=0):
         self.width = width
@@ -54,13 +54,11 @@ class Rectangle:
 
     def __str__(self):
         figure = ""
-        if self.__width == 0 or self.height ==0:
+        if self.__width == 0 or self.height == 0:
             return figure
         for i in range(self.__height):
             if i > 0:
                 figure += '\n'
             for j in range(self.__width):
                 figure += "#"
-        return figure
-
-            
+        return figure 
