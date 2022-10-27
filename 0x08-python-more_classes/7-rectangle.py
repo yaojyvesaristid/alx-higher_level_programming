@@ -71,7 +71,7 @@ class Rectangle:
             if i > 0:
                 figure += '\n'
             for j in range(self.__width):
-                figure += Rectangle.print_symbol
+                figure += self.print_symbol
         return figure
 
     def __repr__(self):
