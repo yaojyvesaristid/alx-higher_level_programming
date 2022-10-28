@@ -1,18 +1,28 @@
 #!/usr/bin/python3
-"""This is the "Rectangle"  module.
-This module provides a Rectangle class.
+"""
+This is the "Rectangle"  module.
+
+This module provides a simple Rectangle class with attribute width and height.
+Default values of both attributes are 0.
+public class attribute number_of_instances initialized to 0
+public class attribute print_symbol initialized to #
+instance method area perimeter str repr and del
 """
 
 
 class Rectangle:
-    """A Rectangle class with attributes width and height,
-    methods area, perimeter, print, str, repr, and del, and
-    class attribute number_of_instances that keeps track of # of instances,
-    class attribute print_symbol which is used as symbol for printing,
-    static method bigger_or_equal that returns biggest rectangle,
-    and class method square that returns a new Rectangle.
     """
-
+    A Rectangle class with private instance attributes width and height
+    private class attribute to count the number of instance
+    public class attribute number_of_instances
+    public class attribute print_symbol represents the symbol used to print
+    constructor and getters and setters for the 2 attributes
+    method area to compute the rectangle area
+    method perimeter to compute the rectangle perimeter
+    method str prints the rectangle
+    method repr return a string representation e.g. Rectangle(2, 4)
+    method del prints a msg
+    """
     number_of_instances = 0
     print_symbol = "#"
 
@@ -70,16 +80,3 @@ class Rectangle:
     def __del__(self):
         Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
-
-    @staticmethod
-    def bigger_or_equal(rect_1, rect_2):
-        if !isinstance(rect_1, Rectangle):
-            raise TypeError("rect_1 must be an instance of Rectangle")
-        if !isinstance(rect_2, Rectangle):
-            raise TypeError("rect_2 must be an instance of Rectangle")
-        if rect_1.area() > rect_2.area():
-            return rect_1
-        elif rect_1.area() < rect_2.area():
-            return rect_2
-        else:
-            return rect_1
