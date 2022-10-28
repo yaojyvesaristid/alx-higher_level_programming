@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-This is the "Rectangle"  module.
-
+Module Rectangle
 This module provides a Rectangle class.
 """
 
