@@ -1,19 +1,14 @@
 #!/usr/bin/python3
+"""
+A rectangle with width and height.
+"""
+
+
 class Rectangle:
     """
-    A Rectangle class with private instance attributes width and height
-    private class attribute to count the number of instance
-    public class attribute number_of_instances
-    public class attribute print_symbol represents the symbol used to print
-    constructor and getters and setters for the 2 attributes
-    method area to compute the rectangle area
-    method perimeter to compute the rectangle perimeter
-    method str prints the rectangle
-    method repr return a string representation e.g. Rectangle(2, 4)
-    method del prints a msg
-    static method bigger_or_equal returns the biggest rectangle
-    based on the area
+    Rectangle functions and data
     """
+
     number_of_instances = 0
     print_symbol = "#"
 
