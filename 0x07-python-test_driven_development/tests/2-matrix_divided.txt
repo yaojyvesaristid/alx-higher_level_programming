@@ -16,6 +16,16 @@ Traceback (most recent call last):
     ...
 ZeroDivisionError: division by zero
 
+case matrix content is not a list of integers/float:
+>>> matrix_divided(matrix, 2)
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+case div is flat('inf'):
+>>> matrix_divided(matrix, float('inf'))
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
 case of basic usage:
 matrix_divided(matrix, 3)
 [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
