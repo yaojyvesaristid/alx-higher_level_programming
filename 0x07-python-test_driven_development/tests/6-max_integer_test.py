@@ -16,7 +16,7 @@ class TestMaxInteger(unittest.TestCase):
         """
         self.assertEqual(max_integer([1, 5, 12, 10, 3]), 12)
 
-    def text_max_int_beginning(self):
+    def text_max_int_begin(self):
         """Test for max at the beginning
         """
         self.assertEqual(max_integer([19, 5, 2, 12, 10, 3]), 19)
@@ -36,10 +36,10 @@ class TestMaxInteger(unittest.TestCase):
         """
         self.assertEqual(max_integer([-1, -2, -18]), -1)
 
-    def test_max_int_negative_positive:
-        """Test with negative and positive int
+    def test_max_int_negative_positive(self):
+        """Test with one negative and positive int
         """
-        self.assertEqual(max_integer([0, -1, 5, -18, 3]), 5)
+        self.assertEqual(max_integer([0, 5, -18, 3]), 5)
 
     def test_max_int_one(self):
         """
