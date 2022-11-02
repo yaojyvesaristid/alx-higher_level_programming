@@ -1,0 +1,52 @@
+Docttest for Add integer module
+===============================
+
+Using "add_integer" method
+---------------------------
+
+Param "b" has '98' as default value
+a and b params must be integer
+return the sum of a and b
+
+import 'add_integer' from module '0-add_integer'
+>>> add_integer = __import__('0-add_integer').add_integer
+
+case a and b are int values
+>>> add_integer(1, 2)
+3
+
+case b is negative int
+>>> add_integer(100, -2)
+98
+
+case only a is given
+>>> add_integer(2)
+100
+
+case a is a float
+>>> add_integer(100.3, -2)
+98
+
+case a and b are float
+>>> add_integer(100.3, -2.8)
+98
+
+case b is string
+>>> add_integer(4, "School")
+Traceback (most recent call last):
+  ...
+TypeError: b must be an integer
+
+case a is None
+>>> add_integer(None)
+Traceback (most recent call last):
+  ...
+TypeError: a msut be an integer
+
+case a and b are negative
+>>> add_integer(-1, -2)
+-3
+
+case a and b are negative and float
+>>> add_integer(-1.5, -2.7)
+-3
