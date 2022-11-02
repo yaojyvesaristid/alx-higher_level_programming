@@ -16,12 +16,12 @@ class TestMaxInteger(unittest.TestCase):
         """
         self.assertEqual(max_integer([1, 5, 12, 10, 3]), 12)
 
-    def text_max_int_begin(self):
+    def test_max_int_begin(self):
         """Test for max at the beginning
         """
         self.assertEqual(max_integer([19, 5, 2, 12, 10, 3]), 19)
 
-    def text_max_int_end(self):
+    def test_max_int_end(self):
         """Test for max at the end
         """
         self.assertEqual(max_integer([19, 5, 2, 12, 10, 50]), 50)
