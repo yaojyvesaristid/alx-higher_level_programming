@@ -14,17 +14,17 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_int_middle(self):
         """Test for max in the middle
         """
-        self.assertEqual(max_integer([1, 5, 12, 10, 3], 12))
+        self.assertEqual(max_integer([1, 5, 12, 10, 3]), 12)
 
     def text_max_int_beginning(self):
         """Test for max at the beginning
         """
-        self.assertEqual(max_integer([19, 5, 2, 12, 10, 3], 19))
+        self.assertEqual(max_integer([19, 5, 2, 12, 10, 3]), 19)
 
     def text_max_int_end(self):
         """Test for max at the end
         """
-        self.assertEqual(max_integer([19, 5, 2, 12, 10, 50], 50))
+        self.assertEqual(max_integer([19, 5, 2, 12, 10, 50]), 50)
 
     def test_max_int_empty(self):
         """Text empty list
@@ -34,18 +34,18 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_int_negative(self):
         """Test with negative int
         """
-        self.assertEqual(max_integer([-1, -2, -18], -1))
+        self.assertEqual(max_integer([-1, -2, -18]), -1)
 
     def test_max_int_negative_positive:
         """Test with negative and positive int
         """
-        self.assertEqual(max_integer([0, -1, 5, -18, 3], 5))
+        self.assertEqual(max_integer([0, -1, 5, -18, 3]), 5)
 
     def test_max_int_one(self):
         """
         Test with one element in the list
         """
-        self.assertEqual(max_integer([2], 2))
+        self.assertEqual(max_integer([2]), 2)
 
 if __name__ == "__main__":
     unittest.main()
