@@ -9,7 +9,7 @@ def add_attribute(obj, name, value):
     add new attribute to an object 'obj' if it's possible
     """
 
-    immuable_object = [int, float, str, dict, list, tuple, object, type, frozenset]
+    immuable_object = [int, float, str, dict, list, tuple, object, type]
     if type(obj) in immuable_object:
         raise TypeError("can't add new attribute")
 
