@@ -4,16 +4,20 @@ Doctest for MyList
 Use of printed_sorted
 ---------------------
 
-import print_sorted
->>> print_sorted = __import__("1-my_list").MyList.print_sorted
+import class MyList:
+>>> MyList = __import__("1-my_list").MyList
 
-basic usage:
->>> my_list = [2, 5, 1, 0]
->>> print_sorted(my_list)
-[0, 1, 2, 5]
+instantiation and manipulation of new object:
+>>> my_list = MyList()
+>>> my_list.append(5)
+>>> my_list.append(2)
+>>> my_list.append(0)
+>>> my_list.append(-8)
+>>> my_list.append(1)
+>>> print(my_list)
+[5, 2, 0, -8, 1]
 
-case list has one negative number:
->>> my_list = [2, 5, 1, 0, -8]
+basic sorted usage:
 >>> print_sorted(my_list)
 [-8, 0, 1, 2, 5]
 
