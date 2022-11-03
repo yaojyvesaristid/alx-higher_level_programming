@@ -51,5 +51,5 @@ case print sorted returns a new list:
 >>> ml.append(-10)
 >>> print(ml)
 [4, -2, 3, -10]
->>> ml.print_sorted())
+>>> ml.print_sorted()
 [-10, -2, 3, 4]]
