@@ -52,4 +52,4 @@ case print sorted returns a new list:
 >>> print(ml)
 [4, -2, 3, -10]
 >>> ml.print_sorted()
-[-10, -2, 3, 4]]
+[-10, -2, 3, 4]
