@@ -22,17 +22,25 @@ basic sorted usage:
 [-8, 0, 1, 2, 5]
 
 case list has only negative number:
->>> my_list = [-2, -5, -1, -8]
+>>> my_list = MyList()
+>>> my_list.append(-5)
+>>> my_list.append(-2)
+>>> my_list.append(-8)
+>>> my_list.append(-1)
+>>> print(my_list)
+[-5, -2, -8, -1]
+
+sorted negative numbers:
 >>> my_list.print_sorted()
 [-8, -5, -2, -1]
 
 case list is empty:
->>> my_list = []
->>> my_list.print_sorted()
+>>> my_list = MyList()
+>>> print(my_list)
 []
 
 case one value is not int:
->>> my_list = [-2, -5, -1, "4"]
+>>> my_list.append("2")
 >>> my_list.print_sorted()
 Traceback (most recent call last):
 ...
