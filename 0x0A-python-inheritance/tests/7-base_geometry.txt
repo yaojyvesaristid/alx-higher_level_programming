@@ -68,12 +68,6 @@ Traceback (most recent call last):
 ...
 TypeError: my_amount must be an integer
 
-case value is not given:
->>> baseGeo.integer_validator("age")
-Traceback (most recent call last)
-...
-TypeError: integer_validator() missing 1 required positional argument: 'value'
-
 case no parameter is given:
 >>> baseGeo.integer_validator()
 Traceback (most recent call last):
