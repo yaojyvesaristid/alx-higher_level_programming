@@ -18,22 +18,22 @@ instantiation and manipulation of new object:
 [5, 2, 0, -8, 1]
 
 basic sorted usage:
->>> print_sorted(my_list)
+>>> my_list.print_sorted()
 [-8, 0, 1, 2, 5]
 
 case list has only negative number:
 >>> my_list = [-2, -5, -1, -8]
->>> print_sorted(my_list)
+>>> my_list.print_sorted()
 [-8, -5, -2, -1]
 
 case list is empty:
 >>> my_list = []
->>> print_sorted(my_list)
+>>> my_list.print_sorted()
 []
 
 case one value is not int:
 >>> my_list = [-2, -5, -1, "4"]
->>> print_sorted(my_list)
+>>> my_list.print_sorted()
 Traceback (most recent call last):
 ...
 TypeError: '<' not supported between instances of 'str' and 'int'
