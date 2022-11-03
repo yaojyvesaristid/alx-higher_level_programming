@@ -13,6 +13,7 @@ class Square(Rectangle):
 
     def __init__(self, size):
         super().integer_value("size", size)
+        super().__init__(size, size)
         self.__size = size
 
     def area(self):
