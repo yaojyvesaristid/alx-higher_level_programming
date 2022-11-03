@@ -34,21 +34,3 @@ case value is infinity:
 Traceback (most recent call last):
 ...
 TypeError: my_amount must be an integer
-
-case no paramter:
->>> baseGeo.integer_validator()
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
-
-case value is not given:
->>> baseGeo.integer_validator("my_amount")
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
-
-case name is not give:
->>> baseGeo.integer_validator(23)
-Traceback (most recent call last):
-...
-TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
