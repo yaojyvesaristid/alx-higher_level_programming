@@ -39,6 +39,18 @@ case list is empty:
 >>> print(my_list)
 []
 
-sorted empty list::
+sorted empty list:
 >>> my_list.print_sorted()
 []
+
+case print sorted returns a new list:
+>>> ml = MyList()
+>>> ml.append(4)
+>>> ml.append(-2)
+>>> ml.append(3)
+>>> ml.append(-10)
+>>> print(ml)
+[4, -2, 3, -10]
+>>> nl =  ml.print_sorted()
+>>> print(nl)
+[-10, -2, 3, 4]]
