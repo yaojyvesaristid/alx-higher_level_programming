@@ -1,0 +1,35 @@
+Doctest for MyList
+==================
+
+Use of printed_sorted
+---------------------
+
+import print_sorted
+>>> print_sorted = __import__("1-my_list").MyList.print_sorted
+
+basic usage:
+>>> my_list = [2, 5, 1, 0]
+>>> print_sorted(my_list)
+[0, 1, 2, 5]
+
+case list has one negative number:
+>>> my_list = [2, 5, 1, 0, -8]
+>>> print_sorted(my_list)
+[-8, 0, 1, 2, 5]
+
+case list has only negative number:
+>>> my_list = [-2, -5, -1, -8]
+>>> print_sorted(my_list)
+[-8, -5, -2, -1]
+
+case list is empty:
+>>> my_list = []
+>>> print_sorted(my_list)
+[]
+
+case one value is not int:
+>>> my_list = [-2, -5, -1, "4"]
+>>> print_sorted(my_list)
+Traceback (most recent call last):
+...
+TypeError: '<' not supported between instances of 'str' and 'int'
