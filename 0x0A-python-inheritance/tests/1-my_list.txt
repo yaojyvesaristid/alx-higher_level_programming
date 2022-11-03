@@ -39,9 +39,6 @@ case list is empty:
 >>> print(my_list)
 []
 
-case one value is not int:
->>> my_list.append("2")
+sorted empty list::
 >>> my_list.print_sorted()
-Traceback (most recent call last):
-...
-TypeError: '<' not supported between instances of 'str' and 'int'
+[]
