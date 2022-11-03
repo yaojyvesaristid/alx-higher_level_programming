@@ -7,6 +7,9 @@ Use of BaseGeometry class:
 import BaseGeometry class:
 >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
+usage of integer_validator
+--------------------------
+
 Instantiation and basic usage:
 >>> baseGeo = BaseGeometry()
 >>> baseGeo.integer_validator("my_int", 12)
@@ -16,6 +19,36 @@ case value is not integer:
 Traceback (most recent call last):
 ...
 TypeError: my_int must be an integer
+
+case value is a tuple:
+>>> baseGeo.integer_validator("age", (4,))
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+case value is a list:
+>>> baseGeo.integer_validator("age", [4])
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+case value is a boolean:
+>>> baseGeo.integer_validator("age", True)
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+case value is a set:
+>>> baseGeo.integer_validator("age", {3, 4})
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
+
+case value is None:
+>>> baseGeo.integer_validator("age", None)
+Traceback (most recent call last):
+...
+TypeError: age must be an integer
 
 case value is less than 0:
 >>> baseGeo.integer_validator("my_age", -14)
@@ -34,3 +67,22 @@ case value is infinity:
 Traceback (most recent call last):
 ...
 TypeError: my_amount must be an integer
+
+case value is not given:
+>>> baseGeo.integer_validator("age")
+Traceback (most recent call last)
+...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+case no parameter is given:
+>>> baseGeo.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+
+Usage of area:
+>>> baseGeo.area()
+Traceback (most recent call last):
+...
+Exception: area() is not implemented
