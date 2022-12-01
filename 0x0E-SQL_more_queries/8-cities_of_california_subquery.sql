@@ -2,6 +2,6 @@
 -- results must be sorted in ascending order by cities.id
 -- not allowed to user JOIN
 USE hbtn_0d_usa;
-SELECT * FROM cities
-WHERE state_id = (SELECT id FROM states WHERE name = 'California')
-ORDER BY cities.id ASC;
+SELECT * FROM cities c
+WHERE c.state_id = (SELECT states.id FROM states s WHERE s.name = 'California')
+ORDER BY c.id ASC;
