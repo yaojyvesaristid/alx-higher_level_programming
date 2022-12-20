@@ -6,7 +6,7 @@ function sortNum (a, b) {
 const len = process.argv.length;
 let secondBiggest = 0;
 if (len > 3) {
-  let tab = [];
+  const tab = [];
   for (let i = 2; i < len; i++) {
     tab.push(process.argv[i]);
   }
