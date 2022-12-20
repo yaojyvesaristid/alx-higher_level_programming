@@ -9,4 +9,4 @@ if (process.argv.length === 3) {
   var1 = process.argv[2];
   var2 = process.argv[3];
 }
-console.log(`${var1} is ${var2}`);
+console.log(var1 + ' is ' + var2);
