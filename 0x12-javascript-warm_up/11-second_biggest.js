@@ -2,6 +2,7 @@
 function sortNum (a, b) {
   return a - b;
 }
+
 const len = process.argv.length;
 let secondBiggest = 0;
 if (len > 3) {
@@ -12,4 +13,5 @@ if (len > 3) {
   tab.sort(sortNum);
   secondBiggest = tab[tab.length - 2];
 }
+
 console.log(secondBiggest);
