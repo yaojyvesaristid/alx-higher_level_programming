@@ -8,4 +8,4 @@ exports.esrever = function (list) {
     list[len - (1 + i)] = temp;
   }
   return list;
-}
+};
